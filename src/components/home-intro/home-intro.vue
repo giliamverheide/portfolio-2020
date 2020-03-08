@@ -1,0 +1,89 @@
+<template>
+  <section id="section-intro" class="section intro">
+    <div class="o-container">
+      <div class="text--intro u-animate u-animate-delay--100 js-animate">
+        <h1>
+          Hello! I'm Giliam Verheide, a twenty-four year old Dutch digital designer and front-end
+          developer.
+        </h1>
+        <span>
+          Currently freelancing and building
+          <base-link href="https://logodrops.com" underline target="_blank" rel="noopener"
+            >Logodrops</base-link
+          >, a do-it-yourself logo maker.
+        </span>
+      </div>
+
+      <p class="u-animate u-animate-delay--250 js-animate">
+        I've had the pleasure to work for clients such as Damen Shipyards Group, Nationale Opera en
+        Ballet, ASN Bank, Bouwgarant, Vacanceselect and more.
+      </p>
+
+      <p class="u-animate u-animate-delay--400 js-animate">
+        Previously a front-end developer at
+        <base-link href="https://deptagency.com" underline target="_blank" rel="noopener">
+          TamTam (now Dept)
+        </base-link>
+        (2016-2017) and
+        <base-link href="https://wezz.nl" underline target="_blank" rel="noopener">
+          Wezz e-Commerce
+        </base-link>
+        (2014-2016) and designer at
+        <base-link href="http://appyourservice.nl" underline target="_blank" rel="noopener">
+          AppYourService
+        </base-link>
+        (2013-2014).
+      </p>
+
+      <p class="u-animate u-animate-delay--550 js-animate">
+        <base-link href="https://www.linkedin.com/in/giliam-verheide/" icon="arrow-top-right">
+          View Linkedin profile
+        </base-link>
+      </p>
+    </div>
+  </section>
+</template>
+
+<script>
+import BaseLink from '@/components/base-link';
+
+export default {
+  components: {
+    BaseLink
+  }
+};
+</script>
+
+<style lang="scss" scoped>
+.intro {
+  position: relative;
+  margin-top: calc(2rem + 4%);
+  margin-bottom: calc(2rem + 6%);
+
+  h1 {
+    display: inline;
+  }
+
+  .text--intro {
+    margin-bottom: 4em;
+
+    h1,
+    span {
+      @include fluid-type(320px, 1800px, 22px, 46px);
+      line-height: 1.4;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    @include fluid-type(320px, 1800px, 16px, 26px);
+    line-height: 1.65;
+    font-weight: 400;
+    max-width: 40em;
+
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+}
+</style>

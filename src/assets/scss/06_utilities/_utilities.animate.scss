@@ -1,0 +1,43 @@
+@mixin animation-delay {
+  @for $i from 1 to 20 {
+    $delay: $i * 50;
+
+    &--#{$delay} {
+      transition-delay: $delay * 0.001s;
+    }
+  }
+}
+
+@mixin animation-offset {
+  @for $i from -10 to 10 {
+    $offset: $i * 10;
+
+    &[data-animation-offset='#{$offset}'] {
+      transform: translateY(#{$offset}px);
+    }
+  }
+}
+
+.u-animate {
+  @include animation-offset();
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.9s $ease-out-cubic, transform 0.9s $ease-out-cubic;
+
+  @include screen-tablet-portrait-and-bigger {
+    transform: translateY(40px);
+  }
+
+  @include screen-laptop-and-bigger {
+    transform: translateY(60px);
+  }
+
+  &.is-inview {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.u-animate-delay {
+  @include animation-delay();
+}

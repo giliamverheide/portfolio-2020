@@ -1,0 +1,74 @@
+{
+  "name": "giliam-verheide-portfolio",
+  "version": "1.0.0",
+  "description": "Giliam Verheide Portfolio 2020 - Built with Vue/Nuxt",
+  "author": "Giliam Verheide",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "browserslist": {
+    "production": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "legacy": [
+      "> 1%",
+      "last 2 versions",
+      "Firefox ESR"
+    ],
+    "modern": [
+      "last 2 Chrome versions",
+      "not Chrome < 60",
+      "last 2 Safari versions",
+      "not Safari < 10.1",
+      "last 2 iOS versions",
+      "not iOS < 10.3",
+      "last 2 Firefox versions",
+      "not Firefox < 54",
+      "last 2 Edge versions",
+      "not Edge < 15"
+    ]
+  },
+  "dependencies": {
+    "@nuxtjs/gtm": "2.2.2",
+    "imagesloaded": "4.1.4",
+    "lazysizes": "5.2.0",
+    "locomotive-scroll": "3.3.9",
+    "lodash": "4.17.15",
+    "nuxt": "2.11.0",
+    "paper": "0.12.4",
+    "swiper": "5.3.1"
+  },
+  "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "0.3.0",
+    "@nuxtjs/eslint-config": "2.0.2",
+    "@nuxtjs/eslint-module": "1.1.0",
+    "@nuxtjs/style-resources": "1.0.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "6.10.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-nuxt": "0.5.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-vue": "6.1.2",
+    "image-webpack-loader": "6.0.0",
+    "imagemin-mozjpeg": "8.0.0",
+    "imagemin-pngquant": "8.0.0",
+    "node-sass": "4.13.1",
+    "prettier": "1.19.1",
+    "sass-loader": "8.0.2",
+    "vue-svg-loader": "0.16.0",
+    "vue-template-compiler": "2.6.11",
+    "webp-loader": "0.6.0"
+  }
+}

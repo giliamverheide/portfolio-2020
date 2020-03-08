@@ -1,0 +1,53 @@
+%heading {
+  font-family: $font-stack-heading;
+}
+
+@mixin h1 {
+  @extend %heading;
+  font-size: $font-size-h1;
+  @include fluid-type(320px, 1800px, 32px, 100px);
+  line-height: $font-line-height-h1;
+  color: $color-heading;
+  font-weight: $font-weight-black;
+  letter-spacing: $font-letter-spacing-h1;
+}
+
+@mixin h2 {
+  @extend %heading;
+  font-size: $font-size-h2;
+  line-height: $font-line-height-h2;
+  color: $color-heading;
+  font-weight: $font-weight-extrabold;
+}
+
+@mixin h3 {
+  @extend %heading;
+  font-size: $font-size-h3;
+  line-height: $font-line-height-h3;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+}
+
+@mixin h4 {
+  @extend %heading;
+  font-size: $font-size-h4;
+  line-height: $font-line-height-h4;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+}
+
+@mixin h5 {
+  @extend %heading;
+  font-size: $font-size-h5;
+  line-height: $font-line-height-h5;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+}
+
+@mixin h6 {
+  @extend %heading;
+  font-size: $font-size-h6;
+  line-height: $font-line-height-h6;
+  color: $color-heading;
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,40 @@
+.o-image {
+  overflow: hidden;
+
+  & + & {
+    margin-top: 5vw;
+  }
+}
+
+.image__inner {
+  overflow: hidden;
+  border-radius: 3px;
+  text-align: center;
+
+  @include screen-laptop-and-bigger {
+    border-radius: 6px;
+  }
+}
+
+.image__figcaption {
+  display: none;
+  text-align: center;
+  margin-top: 1.5em;
+  font-size: 1.6rem;
+  color: #b5b5b5;
+  max-width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Lazyload
+
+// .lazyload,
+// .lazyloading {
+//   opacity: 0 !important;
+// }
+
+// .lazyloaded {
+//   opacity: 1 !important;
+//   transition: opacity 1s !important;
+// }
