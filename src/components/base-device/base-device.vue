@@ -15,6 +15,8 @@
               :src="require(`@/assets/images/${image}`)"
               :width="imageWidth"
               :height="imageHeight"
+              :class="lazyload ? 'lazyload' : ''"
+              :alt="imageAlt"
             />
           </picture>
         </div>
@@ -59,6 +61,14 @@ export default {
     imageHeight: {
       type: String,
       default: '812'
+    },
+    imageAlt: {
+      type: String,
+      default: null
+    },
+    lazyload: {
+      type: Boolean,
+      default: true
     }
   }
 };
@@ -77,7 +87,8 @@ export default {
 .c-device {
   position: relative;
   display: inline-block;
-  width: 280px;
+  min-width: 260px;
+  width: 260px;
   max-width: 100%;
 
   .swiper-container > & {
@@ -89,11 +100,23 @@ export default {
   }
 
   @include screen-mobile-plus-and-bigger {
-    width: 320px;
+    min-width: 290px;
+    width: 290px;
+  }
+
+  @include screen-tablet-portrait-and-bigger {
+    min-width: 310px;
+    width: 310px;
   }
 
   @include screen-laptop-and-bigger {
-    width: 360px;
+    min-width: 320px;
+    width: 320px;
+  }
+
+  @include screen-desktop-and-bigger {
+    min-width: 340px;
+    width: 340px;
   }
 }
 

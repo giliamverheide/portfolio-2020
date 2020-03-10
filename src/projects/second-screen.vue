@@ -25,207 +25,62 @@
     </base-content> -->
     <section class="section">
       <div class="swiper-container">
-        <div class="device device--frameonly">
-          <div class="device__frame">
-            <base-svg path="devices/iphone-x-transparent" />
-          </div>
-        </div>
+        <base-device has-frame frame-only />
+
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="require(`~/assets/images/projects/second-screen/login.png?webp`)"
-                        type="image/webp"
-                      />
-                      <img
-                        :src="require(`~/assets/images/projects/second-screen/login.png`)"
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/login.png"
+              image-alt="UEFA Champions League Second Screen App - Login"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijden.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="require(`~/assets/images/projects/second-screen/wedstrijden.png`)"
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijden.png"
+              image-alt="UEFA Champions League Second Screen App - Wedstrijden"
+            />
           </div>
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_voorspellen.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_voorspellen.png`)
-                        "
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_voorspellen.png"
+              image-alt="UEFA Champions League Second Screen App - Voorspellen"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_live.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="require(`~/assets/images/projects/second-screen/wedstrijd_live.png`)"
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_live.png"
+              image-alt="UEFA Champions League Second Screen App - Live wedstrijd"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_camerahoek.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_camerahoek.png`)
-                        "
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_camerahoek.png"
+              image-alt="UEFA Champions League Second Screen App - Verander camerahoek"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_commentaar.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_commentaar.png`)
-                        "
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_commentaar.png"
+              image-alt="UEFA Champions League Second Screen App - Commentaar"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_chat.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="require(`~/assets/images/projects/second-screen/wedstrijd_chat.png`)"
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_chat.png"
+              image-alt="UEFA Champions League Second Screen App - Chat"
+            />
           </div>
 
           <div class="swiper-slide">
-            <div class="device">
-              <div class="device__image">
-                <figure class="o-image">
-                  <div class="image__inner">
-                    <picture>
-                      <source
-                        :srcset="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_statistieken.png?webp`)
-                        "
-                        type="image/webp"
-                      />
-                      <img
-                        :src="
-                          require(`~/assets/images/projects/second-screen/wedstrijd_statistieken.png`)
-                        "
-                        width="375"
-                        height="812"
-                      />
-                    </picture>
-                  </div>
-                </figure>
-              </div>
-            </div>
+            <base-device
+              image="projects/second-screen/wedstrijd_statistieken.png"
+              image-alt="UEFA Champions League Second Screen App - Wedstrijd statistieken"
+            />
           </div>
         </div>
       </div>
@@ -237,12 +92,12 @@
 import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css';
 // import BaseContent from '@/components/base-content';
-import BaseSvg from '@/components/base-svg';
+import BaseDevice from '@/components/base-device';
 
 export default {
   components: {
     // BaseContent,
-    BaseSvg
+    BaseDevice
   },
   props: {
     project: {
@@ -278,59 +133,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.device-list {
-  display: flex;
-  justify-content: center;
-
-  .device {
-    margin: 0 3rem;
-  }
-}
-
-.device {
-  position: relative;
-  width: 260px;
-  max-width: 100%;
-
-  .swiper-container > & {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    pointer-events: none;
-    z-index: 10;
-  }
-
-  @include screen-mobile-plus-and-bigger {
-    width: 320px;
-  }
-
-  @include screen-laptop-and-bigger {
-    width: 360px;
-  }
-}
-
-.device__frame {
+.swiper-container > .c-device {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-
-  .device--frameonly & {
-    position: relative;
-  }
-
-  img,
-  svg {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.device__image {
-  position: relative;
-  padding: 6.6%;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .swiper-container {

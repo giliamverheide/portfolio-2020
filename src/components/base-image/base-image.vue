@@ -1,18 +1,24 @@
 <template>
-  <figure class="c-image o-image">
+  <figure :class="lazyload && 'lazyload'" class="c-image o-image">
     <div class="image__inner">
       <picture>
         <source
           v-if="webp"
-          :data-srcset="require(`@/assets/images/${image}?webp`)"
+          :srcset="!lazyload && require(`@/assets/images/${image}?webp`)"
+          :data-srcset="lazyload && require(`@/assets/images/${image}?webp`)"
           type="image/webp"
         />
         <img
-          src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-          :data-src="require(`@/assets/images/${image}`)"
+          :src="
+            lazyload
+              ? 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=='
+              : require(`@/assets/images/${image}`)
+          "
+          :data-src="lazyload && require(`@/assets/images/${image}`)"
           :width="imageWidth"
           :height="imageHeight"
           :class="lazyload && 'lazyload'"
+          :alt="imageAlt"
         />
       </picture>
     </div>
@@ -36,6 +42,10 @@ export default {
     imageHeight: {
       type: String,
       default: '1000'
+    },
+    imageAlt: {
+      type: String,
+      default: null
     },
     lazyload: {
       type: Boolean,

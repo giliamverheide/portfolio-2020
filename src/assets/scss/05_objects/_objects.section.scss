@@ -1,0 +1,23 @@
+.o-section {
+  margin: 4rem 0;
+
+  @include screen-mobile-plus-and-bigger {
+    margin: 6rem 0;
+  }
+
+  @include screen-tablet-portrait-and-bigger {
+    margin: 8rem 0;
+  }
+
+  @include screen-tablet-landscape-and-bigger {
+    margin: 10rem 0;
+  }
+
+  @include screen-laptop-and-bigger {
+    margin: 12rem 0;
+  }
+
+  @include screen-desktop-and-bigger {
+    margin: 14rem 0;
+  }
+}

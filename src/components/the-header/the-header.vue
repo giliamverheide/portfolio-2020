@@ -14,10 +14,10 @@
             data-animation-offset="20"
           >
             <base-link
-              href="mailto:giliam@verheide.com"
+              href="mailto:giliam@verheide.nl"
               class="header__nav__list__item__link"
               underline
-              >giliam@verheide.com</base-link
+              >giliam@verheide.nl</base-link
             >
           </li>
         </ul>
@@ -44,9 +44,22 @@ export default {
 .header__container {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   height: 12rem;
   z-index: 10;
+
+  @include screen-mobile-plus-and-bigger {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__logo {
+  margin-right: 4rem;
 }
 
 .header__logo__link {
@@ -54,10 +67,6 @@ export default {
   text-transform: uppercase;
   font-size: 2.2rem;
   font-weight: $font-weight-extrabold;
-}
-
-.header__nav {
-  margin-left: auto;
 }
 
 .header__nav__list {
@@ -69,6 +78,10 @@ export default {
 .header__nav__list__item {
   display: flex;
   margin-left: 4rem;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .header__nav__list__item__link {

@@ -25,7 +25,7 @@ const state = () => ({
       year: '2018',
       image: 'moviestream/preview.png',
       style: `background: #302e3c linear-gradient(19deg, #302e3c 0%, #6b6598 100%)`,
-      backgroundColor: 'rgb(55, 58, 68)',
+      backgroundColor: 'rgb(10, 11, 12)',
       scrollSpeed: '1'
     },
     {

@@ -49,88 +49,29 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-dashboard.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-dashboard.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    :src="require(`~/assets/images/projects/ark-wallet-themes/pure-dashboard.png`)"
-                    width="1400"
-                    height="1000"
-                    class=""
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pure-dashboard.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pure - Dashboard"
+              :lazyload="false"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-wallets.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-wallets.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-wallets.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pure-wallets.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pure - Wallets"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-transfer.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-transfer.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/pure-transfer.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pure-transfer.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pure - Transfer"
+            />
           </div>
         </div>
       </div>
@@ -162,88 +103,29 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-dashboard.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-dashboard.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    :src="require(`~/assets/images/projects/ark-wallet-themes/pro-dashboard.png`)"
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pro-dashboard.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pro - Dashboard"
+              :lazyload="false"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-wallets.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-wallets.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-wallets.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pro-wallets.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pro - Wallets"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-transfer.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-transfer.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/pro-transfer.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/pro-transfer.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Pro - Transfer"
+            />
           </div>
         </div>
       </div>
@@ -275,90 +157,29 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-dashboard.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-dashboard.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    :src="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-dashboard.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/breeze-dashboard.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Breeze - Dashboard"
+              :lazyload="false"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-wallets.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-wallets.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-wallets.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/breeze-wallets.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Breeze - Wallets"
+            />
           </div>
           <div class="swiper-slide">
-            <figure class="o-image">
-              <div class="image__inner">
-                <picture>
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-transfer.png?webp`)
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    :data-srcset="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-transfer.png`)
-                    "
-                    type="image/png"
-                  />
-                  <img
-                    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                    :data-src="
-                      require(`~/assets/images/projects/ark-wallet-themes/breeze-transfer.png`)
-                    "
-                    width="1400"
-                    height="1000"
-                    class="lazyload"
-                  />
-                </picture>
-              </div>
-            </figure>
+            <base-image
+              image="projects/ark-wallet-themes/breeze-transfer.png"
+              image-width="1400"
+              image-height="1000"
+              image-alt="Ark Wallet Theme Breeze - Transfer"
+            />
           </div>
         </div>
       </div>
@@ -371,11 +192,13 @@ import Swiper from 'swiper';
 import 'swiper/css/swiper.min.css';
 import BaseContent from '@/components/base-content';
 import BaseButton from '@/components/base-button';
+import BaseImage from '@/components/base-image';
 
 export default {
   components: {
     BaseContent,
-    BaseButton
+    BaseButton,
+    BaseImage
   },
   props: {
     project: {
