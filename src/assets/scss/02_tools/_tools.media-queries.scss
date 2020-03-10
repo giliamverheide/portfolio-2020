@@ -32,6 +32,12 @@
   }
 }
 
+@mixin screen-laptop-plus-and-smaller {
+  @media only screen and (max-width: em($laptop-plus-end)) {
+    @content;
+  }
+}
+
 /**
 * Media queries targeting a device and bigger
 **/
@@ -56,6 +62,12 @@
 
 @mixin screen-laptop-and-bigger {
   @media only screen and (min-width: em($laptop-start)) {
+    @content;
+  }
+}
+
+@mixin screen-laptop-plus-and-bigger {
+  @media only screen and (min-width: em($laptop-plus-start)) {
     @content;
   }
 }
@@ -99,6 +111,12 @@
 
 @mixin screen-laptop-only {
   @media only screen and (min-width: em($laptop-start)) and (max-width: em($laptop-end)) {
+    @content;
+  }
+}
+
+@mixin screen-laptop-plus-only {
+  @media only screen and (min-width: em($laptop-plus-start)) and (max-width: em($laptop-plus-end)) {
     @content;
   }
 }

@@ -5,6 +5,7 @@ $breakpoint-mobile-plus: 480px;
 $breakpoint-tablet-portrait: 768px;
 $breakpoint-tablet-landscape: 1024px;
 $breakpoint-laptop: 1240px;
+$breakpoint-laptop-plus: 1400px;
 $breakpoint-desktop: 1600px;
 $breakpoint-container: 1800px;
 
@@ -23,7 +24,10 @@ $tablet-landscape-start: $breakpoint-tablet-landscape;
 $tablet-landscape-end: $breakpoint-laptop - 0.5;
 
 $laptop-start: $breakpoint-laptop;
-$laptop-end: $breakpoint-desktop - 0.5;
+$laptop-end: $breakpoint-laptop-plus - 0.5;
+
+$laptop-plus-start: $breakpoint-laptop-plus;
+$laptop-plus-end: $breakpoint-desktop - 0.5;
 
 $desktop-start: $breakpoint-desktop;
 
@@ -48,6 +52,9 @@ $screen-tablet-landscape-and-bigger: 'only screen and ( min-width : #{em($tablet
 $screen-laptop-only: 'only screen and ( min-width : #{em($laptop-start)} ) and ( max-width : #{em($laptop-end)} )';
 $screen-laptop-and-bigger: 'only screen and ( min-width : #{em($laptop-start)} )';
 
+$screen-laptop-plus-only: 'only screen and ( min-width : #{em($laptop-plus-start)} ) and ( max-width : #{em($laptop-plus-end)} )';
+$screen-laptop-plus-and-bigger: 'only screen and ( min-width : #{em($laptop-plus-start)} )';
+
 $screen-desktop-and-bigger: 'only screen and ( min-width : #{em($desktop-start)} )';
 
 $screen-portrait: 'screen and (orientation: portrait)';
@@ -56,7 +63,8 @@ $screen-landscape: 'screen and (orientation: landscape)';
 // Grid breakpoint names mapped to @media values, used for responsive utilities.
 
 $breakpoint-list: (
-  'xxlg': $screen-desktop-and-bigger,
+  'xxxlg': $screen-desktop-and-bigger,
+  'xxlg': $screen-laptop-plus-only,
   'xlg': $screen-laptop-only,
   'lg': $screen-tablet-landscape-only,
   'md': $screen-tablet-portrait-only,

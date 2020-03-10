@@ -3,7 +3,8 @@ $grid-breakpoints: (
   'sm': $breakpoint-mobile-plus,
   'md': $breakpoint-tablet-portrait,
   'lg': $breakpoint-tablet-landscape,
-  'xlg': $breakpoint-laptop
+  'xlg': $breakpoint-laptop,
+  'xxlg': $breakpoint-laptop-plus
 );
 
 $grid-config: (
