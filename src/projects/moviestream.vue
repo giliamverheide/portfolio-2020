@@ -83,7 +83,12 @@
     <section class="o-section">
       <div class="o-container">
         <div class="device-combo">
-          <base-device has-frame is-simple image="projects/moviestream/mobile/tvshow.png" />
+          <base-device
+            has-frame
+            is-simple
+            image="projects/moviestream/mobile/tvshow.png"
+            image-alt="Moviestream TV show - Mobile"
+          />
           <base-image
             image="projects/moviestream/desktop/tvshow.png"
             image-width="1600"
