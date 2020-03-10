@@ -125,15 +125,20 @@ export default {
     defaultImageLoader: 'img-loader',
     inlineImageLimit: -1,
     mozjpeg: {
-      quality: 90
+      quality: 85
     },
     optipng: false,
     pngquant: {
-      speed: 5,
-      quality: [0.75, 0.9]
+      speed: 3,
+      quality: [0.7, 0.95],
+      strip: true
     },
     webp: {
-      quality: 95
+      quality: 65,
+      method: 5,
+      sns: 80,
+      sharpness: 0,
+      nearLossless: 40
     }
   },
 
