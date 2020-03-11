@@ -38,7 +38,7 @@ export default {
 
 <style lang="scss" scoped>
 .work {
-  margin-top: 4vw;
+  // margin-top: 4vw;
 
   .o-container {
     position: relative;
@@ -54,7 +54,7 @@ export default {
   bottom: 0;
 
   h2 {
-    position: absolute;
+    // position: absolute;
     display: flex;
     align-items: center;
     font-size: 8vw;

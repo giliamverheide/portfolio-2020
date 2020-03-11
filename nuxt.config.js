@@ -76,7 +76,7 @@ export default {
    */
   plugins: [
     // {
-    //   src: '~/plugins/SmoothScroll.js',
+    //   src: '~/plugins/LocomotiveScroll.js',
     //   mode: 'client'
     // },
     {

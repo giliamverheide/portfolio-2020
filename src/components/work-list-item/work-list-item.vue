@@ -76,14 +76,14 @@ $transition-time: cubic-bezier(0.63, 0.27, 0.38, 0.85);
   position: relative;
   width: 100%;
   max-width: 110rem;
-  margin: 10vw auto;
+  margin: 0 auto 10vw auto;
 
   @include screen-tablet-landscape-and-bigger {
     width: 60%;
   }
 
   @include screen-desktop-and-bigger {
-    margin: 16rem auto;
+    margin: 0 auto 16rem auto;
   }
 
   &.active {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="content">
+    <div id="content" js-smooth-scroll>
       <Header />
 
       <main>
