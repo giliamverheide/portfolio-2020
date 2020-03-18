@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .c-icon {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-top: 0.1em;
   transition: transform 0.3s ease, margin 0.3s ease;

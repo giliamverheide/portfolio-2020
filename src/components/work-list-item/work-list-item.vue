@@ -79,7 +79,7 @@ $transition-time: cubic-bezier(0.63, 0.27, 0.38, 0.85);
   margin: 0 auto 10vw auto;
 
   @include screen-tablet-landscape-and-bigger {
-    width: 60%;
+    width: 75%;
   }
 
   @include screen-desktop-and-bigger {
