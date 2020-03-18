@@ -3,6 +3,7 @@
   <div>
     <work-hero :project="project"></work-hero>
     <component :is="projectContent" :project="project" />
+    <cta-full :next-project="nextProject" />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 /* eslint-disable no-unused-vars, global-require */
 import animate from '@/mixins/animate';
 import WorkHero from '@/components/work-hero';
+import CtaFull from '@/components/cta-full';
 
 const getProjectContent = fileName => ({
   component: import(`@/projects/${fileName}`)
@@ -18,7 +20,8 @@ const getProjectContent = fileName => ({
 export default {
   scrollToTop: true,
   components: {
-    WorkHero
+    WorkHero,
+    CtaFull
   },
   mixins: [animate],
   data() {
@@ -29,6 +32,14 @@ export default {
   computed: {
     project() {
       return this.$store.state.projects.projects.find(project => project.slug === this.slug);
+    },
+    projectIndex() {
+      return this.$store.state.projects.projects.findIndex(project => project.slug === this.slug);
+    },
+    nextProject() {
+      return this.projectIndex + 1 === this.$store.state.projects.projects.length
+        ? this.$store.state.projects.projects[0]
+        : this.$store.state.projects.projects[this.projectIndex + 1];
     }
   },
   beforeCreate() {
