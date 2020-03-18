@@ -183,6 +183,11 @@ export default {
     width: 40vw;
   }
 
+  @include screen-desktop-and-bigger {
+    font-size: 6rem;
+    width: 64rem;
+  }
+
   &::after {
     content: '↓';
     position: absolute;
