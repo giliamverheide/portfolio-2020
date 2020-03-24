@@ -126,6 +126,22 @@ export default {
   backface-visibility: hidden;
   transform: rotateY(0deg) translateZ(20px);
 
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      -90deg,
+      $color-background-html 0%,
+      transparent,
+      $color-background-html 100%
+    );
+    z-index: 1;
+  }
+
   @include screen-mobile-plus-and-bigger {
     transform: rotateY(0deg) translateZ(30px);
   }
@@ -161,6 +177,7 @@ export default {
   position: relative;
   display: flex;
   font-size: 6vw;
+  font-weight: $font-weight-regular;
   width: 60vw;
   justify-content: center;
   align-items: center;
