@@ -40,7 +40,7 @@
   "dependencies": {
     "@nuxtjs/gtm": "2.2.2",
     "imagesloaded": "4.1.4",
-    "lazysizes": "5.2.0",
+    "lazysizes": "5.2.1",
     "locomotive-scroll": "3.3.9",
     "lodash": "4.17.15",
     "nuxt": "2.11.0",
