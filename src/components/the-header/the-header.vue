@@ -7,7 +7,7 @@
         </nuxt-link>
       </div>
 
-      <nav class="header__nav">
+      <!-- <nav class="header__nav">
         <ul class="header__nav__list">
           <li
             class="header__nav__list__item js-animate u-animate u-animate-delay--300"
@@ -21,17 +21,17 @@
             >
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </div>
   </header>
 </template>
 
 <script>
-import BaseLink from '@/components/base-link';
+// import BaseLink from '@/components/base-link';
 
 export default {
   components: {
-    BaseLink
+    // BaseLink
   }
 };
 </script>

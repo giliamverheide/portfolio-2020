@@ -4,19 +4,15 @@
       <div class="intro__heading">
         <div class="text--intro u-animate u-animate-delay--100 js-animate">
           <h1>
-            Hello! I'm Giliam Verheide, a twenty-four year old Dutch digital designer and front-end
-            developer.
+            Hello! I'm Giliam Verheide, a Dutch digital designer and front-end developer.
           </h1>
           <span>
-            Currently freelancing and building
-            <base-link href="https://logodrops.com" underline target="_blank" rel="noopener"
-              >Logodrops</base-link
-            >, a do-it-yourself logo maker.
+            Currently freelancing.
           </span>
         </div>
-        <div class="intro__image">
+        <!-- <div class="intro__image">
           <base-image image="me-bw.png" />
-        </div>
+        </div> -->
       </div>
 
       <p class="u-animate u-animate-delay--250 js-animate">
@@ -25,7 +21,10 @@
       </p>
 
       <p class="u-animate u-animate-delay--400 js-animate">
-        Previously a front-end developer at
+        Founder at
+        <base-link href="https://logodrops.com" underline target="_blank" rel="noopener">
+          Logodrops </base-link
+        >. Previously a front-end developer at
         <base-link href="https://deptagency.com" underline target="_blank" rel="noopener">
           TamTam (now Dept)
         </base-link>
@@ -51,12 +50,12 @@
 
 <script>
 import BaseLink from '@/components/base-link';
-import BaseImage from '@/components/base-image';
+// import BaseImage from '@/components/base-image';
 
 export default {
   components: {
-    BaseLink,
-    BaseImage
+    BaseLink
+    // BaseImage
   }
 };
 </script>
@@ -97,6 +96,7 @@ export default {
 
 .intro__heading {
   position: relative;
+  max-width: 50em;
 }
 
 .intro__image {
